@@ -39,8 +39,10 @@ Performance metrics were documented as follows before fine-tuning:
 
 ### Errors in the Detection
 Errors and cases where the model failed to detect objects correctly were analyzed, with visualizations indicating issues such as false recognition of random spaces as the "person" class:
-<img src="fig/eval_pre_trained.png" width="620px">
-*Figure 1: Error in detection where random spaces were misidentified as "person".*
+<div>
+    <img src="fig/eval_pre_trained.png" width="620px">
+    <p><em>Figure 1: Error in detection where random spaces were misidentified as "person".</em></p>
+</div>
 
 ## Fine-tuning
 The model was fine-tuned without architectural modifications but with specific parameters ignored for fine-tuning as detailed in the command '--finetune_ignore label_enc.weight class_embed'. The performance metrics after fine-tuning improved significantly:
@@ -57,10 +59,15 @@ The model was fine-tuned without architectural modifications but with specific p
 | AR @ IoU=0.50:0.95 (large maxDets=100) | 0.920 (no change) |
 
 Comparative visualizations of detection results before and after fine-tuning highlighted the improvements:
-<img src="fig/prediction_befroe_tuning.png" width="300px">
-*Figure 2: Before fine-tuning.*
-<img src="fig/prediction_after_tuning.png" width="300px">
-*Figure 3: After fine-tuning.*
+<div>
+    <img src="fig/prediction_befroe_tuning.png" width="300px">
+    <p><em>Figure 2: Before fine-tuning.</em></p>
+</div>
+
+<div>
+    <img src="fig/prediction_after_tuning.png" width="300px">
+    <p><em>Figure 3: After fine-tuning.</em></p>
+</div>
 
 ## Submission Format
 The project code, fine-tuned model weights, and detailed report are submitted through a GitHub repository. The model weights are also uploaded to Google Drive and linked within the README. A comprehensive report, including visualizations of detection results and loss graphs generated during fine-tuning, is included in .pdf format within the repository.
