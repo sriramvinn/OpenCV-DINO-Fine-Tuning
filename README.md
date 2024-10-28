@@ -39,7 +39,7 @@ Performance metrics were documented as follows before fine-tuning:
 
 ### Errors in the Detection
 Errors and cases where the model failed to detect objects correctly were analyzed, with visualizations indicating issues such as false recognition of random spaces as the "person" class:
-![Detection Error](fig/eval_pre_trained.png)
+<img src="fig/eval_pre_trained.png" width="620px">
 *Figure 1: Error in detection where random spaces were misidentified as "person".*
 
 ## Fine-tuning
@@ -57,9 +57,9 @@ The model was fine-tuned without architectural modifications but with specific p
 | AR @ IoU=0.50:0.95 (large maxDets=100) | 0.920 (no change) |
 
 Comparative visualizations of detection results before and after fine-tuning highlighted the improvements:
-![Before Fine-tuning](fig/prediction_befroe_tuning.png)
+<img src="fig/prediction_befroe_tuning.png" width="300px">
 *Figure 2: Before fine-tuning.*
-![After Fine-tuning](fig/prediction_after_tuning.png)
+<img src="fig/prediction_after_tuning.png" width="300px">
 *Figure 3: After fine-tuning.*
 
 ## Submission Format
